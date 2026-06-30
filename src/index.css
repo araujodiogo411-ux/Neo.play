@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-purple: #8A2BE2;
+  --color-neon-cyan: #00E5FF;
+  --color-bg-dark: #050507;
+  --color-glass-bg: rgba(255, 255, 255, 0.04);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+}
+
+:root {
+  --neon-purple: #8A2BE2;
+  --neon-cyan: #00E5FF;
+  --bg-dark: #050507;
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  background-color: #050507;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom radial gradient background matching Design HTML */
+.mesh-bg {
+  background: radial-gradient(circle at 80% 20%, #1a0b2e 0%, transparent 40%), 
+              radial-gradient(circle at 20% 80%, #0a1f2e 0%, transparent 40%),
+              #050507;
+}
+
+/* Glass panel components */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Logo and heading gradients */
+.logo-gradient {
+  background: linear-gradient(to right, #00E5FF, #8A2BE2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Rank layout and stroked font */
+.rank-stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
+  line-height: 0.8;
+  letter-spacing: -6px;
+}
+
+/* Secondary Frosted Glass Buttons */
+.btn-glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Premium micro-scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

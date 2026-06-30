@@ -1,0 +1,6 @@
+{
+  "name": "CineNeo",
+  "description": "Plataforma de streaming premium com suporte multi-perfis, player de vídeo customizado avançado, painel de administração e recomendações inteligentes de IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
